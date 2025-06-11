@@ -1,0 +1,10 @@
+^E:\SKILLBOX\SIPLUSPLUS\LESSON6_M\BUILD\CMAKEFILES\0E5CEA1A8377A091A1E297A63D60E522\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/SKILLBOX/siplusplus/lesson6_m/matrix -BE:/SKILLBOX/siplusplus/lesson6_m/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/SKILLBOX/siplusplus/lesson6_m/build/Matrix.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

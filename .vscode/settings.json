@@ -1,0 +1,13 @@
+{
+    "cmake.sourceDirectory": "E:/SKILLBOX/siplusplus/lesson6_m/matrix",
+    "files.associations": {
+        "atomic": "cpp",
+        "iosfwd": "cpp",
+        "iterator": "cpp",
+        "vector": "cpp",
+        "xstring": "cpp",
+        "xutility": "cpp",
+        "cstddef": "cpp",
+        "memory": "cpp"
+    }
+}

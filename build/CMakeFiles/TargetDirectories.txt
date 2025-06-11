@@ -1,0 +1,3 @@
+E:/SKILLBOX/siplusplus/lesson6_m/build/CMakeFiles/matrix_class.dir
+E:/SKILLBOX/siplusplus/lesson6_m/build/CMakeFiles/ALL_BUILD.dir
+E:/SKILLBOX/siplusplus/lesson6_m/build/CMakeFiles/ZERO_CHECK.dir
