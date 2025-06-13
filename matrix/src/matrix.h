@@ -6,6 +6,7 @@ using namespace std;
 
 namespace math
 {
+    //создан пользовательский тип данных real на основе типа double
     typedef double real;
 
     class Matrix
@@ -20,6 +21,7 @@ namespace math
 
         Matrix(int cols, int rows) : cols_(cols), rows_(rows), mvec_(std::vector<real>(cols * rows)) {};
 
+        //перегрузка оператора доступа к элементам матрицы
         real& operator()(int row, int col); // возврат значения по ссылке (знак &)
 
         real operator()(int row, int col) const;
@@ -35,11 +37,18 @@ namespace math
         //Перегрузка операции умножения 
         friend Matrix operator*(const Matrix &A, const Matrix &B);
 
+        //Перегрузка операции сложения с присваиванием
         Matrix& operator+=(const Matrix &B);
 
         Matrix& operator-=(const Matrix &B);
 
+        Matrix& operator*=(const Matrix &B);
+
         // перегрузка операции вывода
         friend std::ostream &operator<<(std::ostream &out, const Matrix &A);
+
+        // перегрузка операции ввода элементов матрицы
+        friend std::istream &operator>>(std::istream &in, Matrix &A);
     };
+
 }
